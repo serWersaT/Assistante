@@ -8,3 +8,13 @@ C:\C# проекты\голосовой ассистент\в 1.1\Assistante\Ass
 C:\C# проекты\голосовой ассистент\в 1.1\Assistante\Assistante\obj\Debug\Assistante.exe
 C:\C# проекты\голосовой ассистент\в 1.1\Assistante\Assistante\obj\Debug\Assistante.pdb
 C:\C# проекты\голосовой ассистент\в 1.1\Assistante\Assistante\obj\Debug\Assistante.csprojResolveAssemblyReference.cache
+C:\C# проекты\голосовой ассистент\в 1.2\Assistante\Assistante\bin\Debug\Assistante.exe.config
+C:\C# проекты\голосовой ассистент\в 1.2\Assistante\Assistante\bin\Debug\Assistante.exe
+C:\C# проекты\голосовой ассистент\в 1.2\Assistante\Assistante\bin\Debug\Assistante.pdb
+C:\C# проекты\голосовой ассистент\в 1.2\Assistante\Assistante\obj\Debug\Assistante.csprojResolveAssemblyReference.cache
+C:\C# проекты\голосовой ассистент\в 1.2\Assistante\Assistante\obj\Debug\Assistante.Form1.resources
+C:\C# проекты\голосовой ассистент\в 1.2\Assistante\Assistante\obj\Debug\Assistante.Properties.Resources.resources
+C:\C# проекты\голосовой ассистент\в 1.2\Assistante\Assistante\obj\Debug\Assistante.csproj.GenerateResource.Cache
+C:\C# проекты\голосовой ассистент\в 1.2\Assistante\Assistante\obj\Debug\Assistante.csproj.CoreCompileInputs.cache
+C:\C# проекты\голосовой ассистент\в 1.2\Assistante\Assistante\obj\Debug\Assistante.exe
+C:\C# проекты\голосовой ассистент\в 1.2\Assistante\Assistante\obj\Debug\Assistante.pdb

@@ -14,10 +14,10 @@ namespace Assistante
 {
     class YandexSpeech : ConfigurationBase
     {
-        public string ActionToken { get; set; }
+        public static string ActionToken { get; set; }
         WaveOut waveOut = new WaveOut(WaveCallbackInfo.FunctionCallback());
         public bool flag = false;
-        void Speech(string text)
+        void Speech(string text, CancellationToken token)
         {
             ConfigurationBase config = new ConfigurationBase { Action = "API yandex url" }; /*передаю команду в базовый класс*/
             string API_url = config.Config();
@@ -28,6 +28,10 @@ namespace Assistante
 
 
             string url = API_url + text + format + API_key;
+
+            token = cts.Token;
+            if (cts.Token.IsCancellationRequested)
+                return;
 
             using (Stream ms = new MemoryStream())
             {
@@ -69,24 +73,19 @@ namespace Assistante
             }
         }
 
-
-
         CancellationTokenSource cts = new CancellationTokenSource();    /*останов потока, не работает*/
-        //CancellationToken token = cts.Token();
+
 
         public void Speek(string[] str)
         {
-            //var cts = new CancellationTokenSource();
-            //var cancellationToken = cts.Token;
-
-            //CancellationToken token = cts.Token();
+            CancellationToken token = cts.Token;
             if (flag == false)
             {
                 Task task = new Task(() =>
                 {
                     foreach (var x in str)
                     {
-                        Speech(x);
+                        Speech(x, token);
                         if (cts.Token.IsCancellationRequested)
                             return;                       
                     }
